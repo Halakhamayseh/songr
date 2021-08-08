@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Albmos</h2>
+<div th:each="albums :${albums}">
+    <h2>Title:<span th:text="${albums.title}"></span></h2>
+     <h3>Artist<span th:text="${albums.artist}"></span></h3>
+    <h3>Song Count<span th:text="${albums.songCount}"></span></h3>
+    <h3>Length<span th:text="${albums.length}"></span></h3>
+<!--    <img th:src="@{${albums.imageUrl}}"alt="album cover">-->
+    <img th:src="${albums.imageUrl}">
+</div>
+</body>
+</html>
