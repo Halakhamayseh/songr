@@ -11,8 +11,19 @@ As you work on these feature tasks, remember to consider your basic application 
 5. Create an Album class to act as a model in our app.
 An Album has a title, an artist, a songCount, a length (in seconds), and an imageUrl that is a link to that album’s art.
 6. Create a route at /albums that shows three album instances. (These will be hardcoded for today’s lab; create an array that contains three albums, and then display those three on the page.)
+
 ### Testing
  Ensure you have tested the constructor, getters, and setters for the Album class.
+## Lab: 12 - Spring and REST
+### Feature Tasks
+1. Update your Album model so that it can be saved in a database.
+An Album has a title, an artist, a songCount, a length (in seconds), and an imageUrl that is a link to that album’s art.
+2. A user should be able to see information about all the albums on the site.
+3. A user should be able to add albums to the site.
+### Testing
+We will talk more about integration testing in future lectures. For now, visually ensure that each of your routes is working. You are NOT required to write any tests for this lab.
+
+Make sure your server fails gracefully. The server shouldn’t crash and the database shouldn’t be corrupted in any way if a user attempts to read or manipulate information that doesn’t exist
  #### How to run application
  use http://localhost:8080
 
