@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>Added to Albmos</h2>
+<form action="/addOneSong/${particularAlbum.id}" method="post">
+  <label>Title</label>
+  <input type="text" name="title">
+  <label>trackNumber:</label>
+  <input type="number" name="trackNumber">
+  <label>Length:</label>
+  <input type="number" name="length">
+  <input type="submit" value="Added Albmos one song">
+</form>
+<!--<div th:each="album :${albums}">-->
+<div>
+  <h3>ID:<span th:text="${particularAlbum.id}"></span></h3>
+  <h2>Title:<span th:text="${particularAlbum.title}"></span></h2>
+  <h3>Artist<span th:text="${particularAlbum.artist}"></span></h3>
+  <h3>Song Count<span th:text="${particularAlbum.songCount}"></span></h3>
+  <h3>Length<span th:text="${particularAlbum.length}"></span></h3>
+  <!--    <img th:src="@{${albums.imageUrl}}"alt="album cover">-->
+  <img th:src="${particularAlbum.imageUrl}">
+</div>
+<!--</div>-->
+</body>
+</html>

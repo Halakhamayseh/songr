@@ -24,6 +24,15 @@ An Album has a title, an artist, a songCount, a length (in seconds), and an imag
 We will talk more about integration testing in future lectures. For now, visually ensure that each of your routes is working. You are NOT required to write any tests for this lab.
 
 Make sure your server fails gracefully. The server shouldn’t crash and the database shouldn’t be corrupted in any way if a user attempts to read or manipulate information that doesn’t exist
+## Lab: 13 - Related Resources and Integration Testing
+### Feature Tasks
+1. Create a Song model.
+A Song has a title, a length (in seconds), a trackNumber, and the album on which that song appears.
+Ensure that the relationship between Albums and Songs is appropriately set up.
+2. A user should be able to see information about all the songs on the site.
+3. A user should be able to view a page with data about one particular album.
+4. A user should be able to add songs to an album.
+5. A user should be able to see the songs that belong to an album when looking at that album.
  #### How to run application
  use http://localhost:8080
 

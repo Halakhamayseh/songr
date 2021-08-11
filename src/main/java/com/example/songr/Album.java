@@ -1,9 +1,7 @@
 package com.example.songr;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 //import javax.persistence.*;
 @Entity
@@ -25,6 +23,8 @@ public class Album {
     public Album(){
         //defalet cons
     }
+    @OneToMany(mappedBy = "albumSongTitle")
+    private List <Song> songs;
 
     public Album(String title, String artist, int songCount, float length, String imageUrl) {
         this.title = title;
