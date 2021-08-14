@@ -6,7 +6,7 @@
 </head>
 <body>
 <h2>Added to Albmos</h2>
-<form action="/addOneSong/${particularAlbum.id}" method="post">
+<form action="#" th:action="'/addOneSong/'+${particularAlbum.id}" method="post">
   <label>Title</label>
   <input type="text" name="title">
   <label>trackNumber:</label>
